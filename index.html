@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Below the Surface · SDG 14 Life Below Water</title>
-<meta name="description" content="Below the Surface: an immersive website about UN Sustainable Development Goal 14, Life Below Water.">
+<title>Life Below Water · UN SDG 14</title>
+<meta name="description" content="Life Below Water: an immersive website about UN Sustainable Development Goal 14, Life Below Water.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,200..900,0..100;1,9..144,200..900,0..100&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -529,6 +529,17 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
   .dive-hud{display:none}.dive-title{position:relative;top:auto;padding-top:100px;background:#020E18}
 }
 
+
+/* ===== group content ===== */
+.byline{font-size:14px;color:#CFE3F0;margin:22px 0 -10px;letter-spacing:.02em}
+.byline b{color:#fff}
+.ourtake{margin-top:60px;padding:clamp(24px,3.5vw,40px);border-radius:24px;background:linear-gradient(140deg,rgba(255,209,102,.12),rgba(255,209,102,.02));border:1px solid rgba(255,209,102,.25)}
+.ourtake p{color:#DCEBF5;font-size:clamp(16px,1.35vw,19px);max-width:75ch;line-height:1.65}
+.ourtake .kicker{margin-bottom:14px}
+.why-q{font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(20px,1.8vw,25px);line-height:1.35;color:#fff}
+.player button.empty{border:0;width:100%;cursor:pointer;color:#fff;font:inherit}
+.player button.empty .bgimg{opacity:.75}
+
 /* print only the infographic */
 @media print{
   body{background:#fff}
@@ -551,7 +562,7 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
 <button id="sound" aria-pressed="false"><span class="eq"><i></i><i></i><i></i><i></i></span><span id="soundTxt">Ocean sound</span></button>
 
 <nav class="nav" id="nav" aria-label="Main">
-  <a class="brand" href="#top"><i>14</i>Below the Surface</a>
+  <a class="brand" href="#top"><i>14</i>Life Below Water</a>
   <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="navList">Menu</button>
   <ul id="navList">
     <li><a href="#about">About</a></li>
@@ -595,6 +606,7 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
   <div class="wrap">
     <div class="kicker fade-up" style="transition-delay:.2s">UN Sustainable Development Goal <b>14</b></div>
     <h1 class="display"><span class="w"><span>Life</span></span> <span class="w"><span>below</span></span><br><span class="w"><span>water.</span></span></h1>
+    <p class="fade-up byline">A Science project by <b>Gio, Oliver, Sahil &amp; Tyler</b> · Mr Irwin’s class</p>
     <div class="hero-row">
       <p class="fade-up">The ocean feeds billions of people, makes much of the oxygen we breathe and soaks up most of the heat from climate change. Goal 14 is the world’s promise to protect it. Move your mouse to swim with the fish, then scroll to dive.</p>
       <div class="cta fade-up" style="transition-delay:.8s">
@@ -621,11 +633,11 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
         <div class="kicker rv">Challenge <b>1</b> Homepage</div>
         <h2 class="display h2 rv">The blue heart of <em>our planet</em></h2>
         <div class="prose">
-          <p class="rv"><strong>Every second breath you take comes from the ocean.</strong> Tiny drifting plants called phytoplankton make a huge share of Earth’s oxygen, and the sea absorbs about <strong>30% of the CO₂</strong> we release and <strong>over 90% of the extra heat</strong> trapped by greenhouse gases.</p>
-          <p class="rv">In 2015, all 193 UN member states agreed to 17 Sustainable Development Goals to reach by 2030. <strong>Goal 14, Life Below Water</strong>, commits the world to conserve and sustainably use the oceans, seas and marine resources.</p>
-          <p class="rv">But the ocean is under more pressure than ever. Overfishing, plastic, warming water and acidification are pushing marine life to the edge.</p>
+          <p class="rv"><strong>Introduction.</strong> The 17 Sustainable Development Goals were created by the United Nations to make the world a better place. They aim to solve global issues such as poverty, hunger, inequality and climate change, while protecting the environment and ensuring a better future for everyone by 2030.</p>
+          <p class="rv"><strong>Overview.</strong> Our chosen goal is “Life Below Water”. The UNSDG website states that this goal aims to <strong>“conserve and sustainably use the oceans, seas and marine resources for sustainable development.”</strong> It aims to eliminate pollution and overfishing, and responsibly manage all marine life around the world.</p>
+          <p class="rv">That matters for everyone. The ocean holds 97% of the planet’s water, absorbs about <strong>23% of the CO₂</strong> humans release each year and more than <strong>90% of the extra heat</strong> trapped by greenhouse gases.</p>
         </div>
-        <blockquote class="quote rv">“Over three billion people depend on marine and coastal biodiversity for their livelihoods.”<cite>United Nations, SDG 14</cite></blockquote>
+        <blockquote class="quote rv">“Marine fisheries provide 57 million jobs globally and are the primary source of protein for over 50% of the population in least developed countries.”<cite>United Nations, Goal 14 fast facts</cite></blockquote>
       </div>
       <div class="ph-stack rv d2">
         <div class="p1"><div class="bgimg par" data-img="Sea_turtle_breath_underwater_(20910998842).jpg" data-w="1200" data-speed="0.08"></div></div>
@@ -639,7 +651,7 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
       <button class="th on"><div class="im bgimg" data-img="Fisherman_pulling_in_the_net_to_get_the_catch.jpg" data-w="1400"></div><span class="cr">Wikimedia Commons</span>
         <div class="tx"><span class="n">01</span><h3>Overfishing</h3><span class="big">37.6%</span><p>of fish stocks are fished faster than they can breed. Boats are emptying the sea, and illegal fishing makes it worse.</p></div></button>
       <button class="th"><div class="im bgimg" data-img="Blue_plastic_on_a_fan_coral,_turkey_beach,_wakatobi,_2018_(45088490204).jpg" data-w="1400"></div><span class="cr">Wakatobi, Indonesia · Wikimedia Commons</span>
-        <div class="tx"><span class="n">02</span><h3>Pollution</h3><span class="big">23 Mt</span><p>of plastic waste (up to) leaks into water every year. Sewage and fertiliser also create “dead zones” where almost nothing can live.</p></div></button>
+        <div class="tx"><span class="n">02</span><h3>Pollution</h3><span class="big">17 Mt</span><p>of waste clogged the ocean in 2021, with plastic the most harmful, and that could double or triple by 2040. Sewage and fertiliser also create “dead zones”.</p></div></button>
       <button class="th"><div class="im bgimg" data-img="Coral_Reef_Bleaching.jpg" data-w="1400"></div><span class="cr">Wikimedia Commons</span>
         <div class="tx"><span class="n">03</span><h3>Warming</h3><span class="big">84%</span><p>of coral reefs were hit by bleaching heat in 2023–25. Marine heatwaves also push fish toward the poles.</p></div></button>
       <button class="th"><div class="im bgimg" data-img="Coral_in_Raja_Ampat.jpg" data-w="1400"></div><span class="cr">Raja Ampat · Wikimedia Commons</span>
@@ -654,7 +666,7 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
     <div class="dive-title"><div class="wrap"><div class="kicker">Keep scrolling to dive</div></div></div>
     <div class="dive-track" id="diveTrack">
       <div class="zone"><div class="zbg" style="background:linear-gradient(180deg,#0B79B8,#065489)"></div><div class="zph" data-img="School_of_fish_at_Flinders_Reef,_Moreton_Island.jpg" data-w="1800"></div>
-        <div class="wrap"><div><div class="dep">0<small>– 200 m</small></div><h3>The <em>sunlight</em> zone</h3><p>Where sunlight reaches, phytoplankton photosynthesise and make much of the oxygen we breathe. Coral reefs, turtles, dolphins and most of the fish we eat live here.</p><div class="fact"><b>~30%</b>of our CO₂ is absorbed by the ocean</div></div><div></div></div></div>
+        <div class="wrap"><div><div class="dep">0<small>– 200 m</small></div><h3>The <em>sunlight</em> zone</h3><p>Where sunlight reaches, phytoplankton photosynthesise and make much of the oxygen we breathe. Coral reefs, turtles, dolphins and most of the fish we eat live here.</p><div class="fact"><b>~23%</b>of our yearly CO₂ is absorbed by the ocean</div></div><div></div></div></div>
       <div class="zone"><div class="zbg" style="background:linear-gradient(180deg,#05476F,#03284A)"></div><div class="zph" data-img="Moon_Jellies_(Aurelia_aurita)_(7153396279).jpg" data-w="1800" style="opacity:.4"></div>
         <div class="wrap"><div><div class="dep">200<small>– 1,000 m</small></div><h3>The <em>twilight</em> zone</h3><p>Only faint blue light gets this deep. Every night, huge numbers of animals swim up to feed near the surface and sink back down by day: the biggest daily migration on Earth.</p><div class="fact"><b>Daily</b>the largest animal migration on the planet</div></div><div></div></div></div>
       <div class="zone"><div class="zbg" style="background:radial-gradient(ellipse at 70% 50%,#06263F,#020E18 70%)"></div><span class="glow" style="left:19%;top:77%;width:3px;height:5px;animation-delay:-0.35s;opacity:0.86"></span><span class="glow" style="left:62%;top:88%;width:6px;height:4px;animation-delay:-0.28s;opacity:0.42"></span><span class="glow" style="left:51%;top:60%;width:3px;height:6px;animation-delay:-0.80s;opacity:0.88"></span><span class="glow" style="left:77%;top:18%;width:5px;height:3px;animation-delay:-0.07s;opacity:0.79"></span><span class="glow" style="left:3%;top:53%;width:4px;height:6px;animation-delay:-2.18s;opacity:0.72"></span><span class="glow" style="left:58%;top:68%;width:4px;height:5px;animation-delay:-0.69s;opacity:0.53"></span><span class="glow" style="left:60%;top:42%;width:3px;height:6px;animation-delay:-2.51s;opacity:0.73"></span><span class="glow" style="left:84%;top:17%;width:4px;height:5px;animation-delay:-0.36s;opacity:0.60"></span><span class="glow" style="left:94%;top:69%;width:6px;height:4px;animation-delay:-0.91s;opacity:0.75"></span><span class="glow" style="left:65%;top:69%;width:6px;height:3px;animation-delay:-1.44s;opacity:0.85"></span><span class="glow" style="left:53%;top:58%;width:4px;height:5px;animation-delay:-1.65s;opacity:0.82"></span><span class="glow" style="left:88%;top:52%;width:3px;height:6px;animation-delay:-1.99s;opacity:0.46"></span><span class="glow" style="left:22%;top:71%;width:6px;height:5px;animation-delay:-1.47s;opacity:0.42"></span><span class="glow" style="left:7%;top:44%;width:6px;height:4px;animation-delay:-0.51s;opacity:0.54"></span><span class="glow" style="left:3%;top:30%;width:4px;height:6px;animation-delay:-1.54s;opacity:0.97"></span><span class="glow" style="left:75%;top:50%;width:6px;height:5px;animation-delay:-1.98s;opacity:0.77"></span><span class="glow" style="left:95%;top:5%;width:6px;height:4px;animation-delay:-1.56s;opacity:0.74"></span><span class="glow" style="left:56%;top:12%;width:6px;height:5px;animation-delay:-1.71s;opacity:0.52"></span><span class="glow" style="left:66%;top:57%;width:6px;height:5px;animation-delay:-1.24s;opacity:0.40"></span><span class="glow" style="left:71%;top:84%;width:5px;height:6px;animation-delay:-1.80s;opacity:0.88"></span><span class="glow" style="left:83%;top:27%;width:4px;height:3px;animation-delay:-2.40s;opacity:0.88"></span><span class="glow" style="left:34%;top:9%;width:3px;height:3px;animation-delay:-2.60s;opacity:0.67"></span><span class="glow" style="left:98%;top:40%;width:4px;height:5px;animation-delay:-0.33s;opacity:0.77"></span><span class="glow" style="left:46%;top:42%;width:3px;height:4px;animation-delay:-0.48s;opacity:0.72"></span><span class="glow" style="left:23%;top:89%;width:5px;height:5px;animation-delay:-1.36s;opacity:0.59"></span><span class="glow" style="left:62%;top:19%;width:3px;height:5px;animation-delay:-1.16s;opacity:0.65"></span><span class="glow" style="left:26%;top:38%;width:3px;height:5px;animation-delay:-2.70s;opacity:0.71"></span><span class="glow" style="left:28%;top:82%;width:6px;height:3px;animation-delay:-0.68s;opacity:0.64"></span><span class="glow" style="left:6%;top:25%;width:6px;height:6px;animation-delay:-1.63s;opacity:0.53"></span><span class="glow" style="left:82%;top:93%;width:6px;height:4px;animation-delay:-1.57s;opacity:0.42"></span><span class="glow" style="left:88%;top:78%;width:5px;height:6px;animation-delay:-0.18s;opacity:0.58"></span><span class="glow" style="left:29%;top:11%;width:5px;height:3px;animation-delay:-2.58s;opacity:0.59"></span><span class="glow" style="left:40%;top:25%;width:6px;height:5px;animation-delay:-0.39s;opacity:0.74"></span><span class="glow" style="left:6%;top:80%;width:4px;height:6px;animation-delay:-0.51s;opacity:0.92"></span><span class="glow" style="left:92%;top:84%;width:3px;height:6px;animation-delay:-0.60s;opacity:0.46"></span><span class="glow" style="left:75%;top:91%;width:6px;height:4px;animation-delay:-1.48s;opacity:0.96"></span><span class="glow" style="left:51%;top:42%;width:6px;height:3px;animation-delay:-0.98s;opacity:0.92"></span><span class="glow" style="left:38%;top:7%;width:4px;height:4px;animation-delay:-2.57s;opacity:0.89"></span><span class="glow" style="left:74%;top:22%;width:5px;height:6px;animation-delay:-0.64s;opacity:0.80"></span><span class="glow" style="left:50%;top:75%;width:5px;height:6px;animation-delay:-2.30s;opacity:0.72"></span>
@@ -679,16 +691,16 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
 
     <div class="bento">
       <div class="tile w8 photo rv"><div class="bgimg" data-img="Whale_Shark_and_Freediver.jpg" data-w="1600"></div>
-        <div><div class="num"><span data-count="71">0</span><small>%</small></div><div class="lbl">of Earth’s surface is ocean, holding about 97% of all the planet’s water.</div></div><div class="src">UN · SDG 14</div></div>
-      <div class="tile good rv d1"><div><div class="num"><span data-count="3">0</span><small>bn+</small></div><div class="lbl">people rely on marine and coastal biodiversity for their livelihoods.</div></div><div class="src">UN · SDG 14</div></div>
+        <div><div class="num">¾</div><div class="lbl">Oceans cover about three-quarters of Earth’s surface, holding 97% of the planet’s water.</div></div><div class="src">UN · Goal 14</div></div>
+      <div class="tile good rv d1"><div><div class="num"><span data-count="23">0</span><small>%</small></div><div class="lbl">of the carbon dioxide humans release each year is absorbed by the ocean.</div></div><div class="src">UN · Goal 14</div></div>
 
-      <div class="tile hot rv"><div><div class="num"><span data-count="84">0</span><small>%</small></div><div class="lbl">of coral reefs were hit by bleaching-level heat in the 2023–25 global event, the worst ever recorded.</div><div class="coralgrid" id="coralGrid"></div></div><div class="src">ICRI / NOAA · 2025</div></div>
-      <div class="tile rv d1"><div><div class="num"><span data-count="62.4" data-dec="1">0</span><small>%</small></div><div class="lbl">of fish stocks are fished sustainably, down from 90% in 1974.</div></div><div class="src">FAO SOFIA 2026</div></div>
-      <div class="tile photo rv d2"><div class="bgimg" data-img="Plastic_Pollution_in_Santa_Luzia,_Cape_Verde.jpg" data-w="1000"></div><div><div class="num"><span data-count="23">0</span><small>Mt</small></div><div class="lbl">Up to 19–23 million tonnes of plastic waste leak into rivers, lakes and seas every year.</div></div><div class="src">UNEP</div></div>
+      <div class="tile hot rv"><div><div class="num"><span data-count="84">0</span><small>%</small></div><div class="lbl">of coral reefs have been affected by widespread bleaching. The 2023–25 event was the worst on record.</div><div class="coralgrid" id="coralGrid"></div></div><div class="src">ICRI / NOAA · 2025</div></div>
+      <div class="tile rv d1"><div><div class="num"><span data-count="57">0</span><small>million</small></div><div class="lbl">jobs come from marine fisheries. Fish is the main source of protein for over 50% of people in least developed countries.</div></div><div class="src">UN · Goal 14</div></div>
+      <div class="tile photo rv d2"><div class="bgimg" data-img="Plastic_Pollution_in_Santa_Luzia,_Cape_Verde.jpg" data-w="1000"></div><div><div class="num"><span data-count="17">0</span><small>Mt+</small></div><div class="lbl">Over 17 million metric tons of waste clogged the ocean in 2021, with plastic the most harmful. It could double or triple by 2040.</div></div><div class="src">UN · Goal 14</div></div>
 
-      <div class="tile w8 rv"><div><div class="num"><span data-count="8.4" data-dec="1">0</span><small>% protected</small></div><div class="lbl">of the ocean is in protected areas. The world has agreed to reach 30% by 2030, known as “30×30”.</div>
+      <div class="tile w8 rv"><div><div class="num"><span data-count="8.4" data-dec="1">0</span><small>% protected</small></div><div class="lbl">of the ocean is protected. The world has agreed to protect 30% by 2030 (“30×30”), so there’s still more than 20 percentage points to go.</div>
         <div class="meter"><i data-w="8.4"></i><s></s></div><div class="meter-l"><span>0%</span><span>30% target</span><span>100%</span></div></div><div class="src">Protected Planet Report 2024</div></div>
-      <div class="tile rv d1"><div><div class="num"><span data-count="90">0</span><small>%+</small></div><div class="lbl">of the extra heat from greenhouse gases has been absorbed by the ocean.</div></div><div class="src">UN</div></div>
+      <div class="tile rv d1"><div><div class="num"><span data-count="62.4" data-dec="1">0</span><small>%</small></div><div class="lbl">of fish stocks are fished sustainably, down from 90% in 1974.</div></div><div class="src">FAO SOFIA 2026</div></div>
     </div>
   </div>
 </section>
@@ -727,6 +739,8 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
     <p class="lead rv">Goal 14 is split into ten targets. Hover or tap a card to flip it.</p>
     <div class="tgrid" id="tgrid"></div>
     <p class="tnote">14.1 to 14.7 are outcomes to achieve. 14.a to 14.c are the ways countries will get there.</p>
+    <div class="ourtake rv"><div class="kicker">Our summary of the targets</div>
+      <p>The world has agreed to protect <b>30% of the ocean by 2030</b>. Right now about <b>8.4%</b> is protected, so we are still more than 20 percentage points away. By 2025 the UN aimed to prevent and significantly reduce marine pollution of all kinds. By 2020 it aimed to sustainably manage and protect marine and coastal ecosystems, strengthen their resilience and restore them to healthy, productive oceans. Another target is to minimise and address the impacts of ocean acidification, including through better scientific cooperation at all levels.</p></div>
     <div class="unlink rv">
       <svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="96" fill="none" stroke="#fff" stroke-width="8"/><path d="M30 110c20-20 40-20 60 0s40 20 60 0 20-14 20-14" stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="80" cy="70" r="10" fill="#fff"/></svg>
       <h3>Read the full goal on the official UN website</h3>
@@ -741,26 +755,23 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
   <div class="wrap">
     <div class="kicker rv">Challenge <b>2</b> Video</div>
     <h2 class="display h2 rv">See it <em>for yourself</em></h2>
-    <p class="lead rv">A short film that shows what’s happening beneath the waves and why Goal 14 matters.</p>
+    <p class="lead rv">Our chosen video: <b style="color:#fff">UN Sustainable Development Goals | Life Below Water (14)</b></p>
     <div class="vg rv">
       <div class="player" id="player">
-        <div class="empty" id="playerEmpty">
-          <div class="bgimg" data-img="Sea_Turtle_at_dusk,_Anilao.jpg" data-w="1400"></div>
+        <button class="empty" id="playerEmpty" aria-label="Play the video">
+          <div class="bgimg" style="background-image:url('https://i.ytimg.com/vi/pBn8ZCQvFoo/hqdefault.jpg')"></div>
           <div class="play"><svg width="34" height="34" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg></div>
-          <h3>Add your chosen video</h3>
-          <p>Paste a YouTube link on the right, or save a file called video.mp4 in the same folder as this page.</p>
-        </div>
+          <h3>Life Below Water (14)</h3>
+          <p>Click to play</p>
+        </button>
       </div>
       <div class="vside">
-        <div class="f"><label for="vurl">YouTube link</label><div class="row"><input id="vurl" placeholder="https://www.youtube.com/watch?v=…" autocomplete="off"><button class="btn w" id="vload">Load</button></div></div>
-        <div class="f"><label for="vtitle">Name of the video</label><input id="vtitle" placeholder="e.g. Life Below Water: Goal 14"></div>
-        <div class="f"><label for="vwhy">Why I chose this video</label><textarea id="vwhy" rows="4" placeholder="How does it describe Goal 14? What did it teach you?"></textarea></div>
-        <p class="hint">Saves automatically in this browser.</p>
-        <div class="ideas">
-          <label>Search ideas</label>
-          <a href="https://www.youtube.com/results?search_query=UN+SDG+14+Life+Below+Water" target="_blank" rel="noopener">SDG 14 Life Below Water <span>YouTube ↗</span></a>
-          <a href="https://www.youtube.com/results?search_query=coral+bleaching+explained" target="_blank" rel="noopener">Coral bleaching explained <span>YouTube ↗</span></a>
-          <a href="https://www.youtube.com/results?search_query=overfishing+explained" target="_blank" rel="noopener">Overfishing explained <span>YouTube ↗</span></a>
+        <label>Why we chose this video</label>
+        <p class="why-q">“We chose this video because it’s short but also very easy to understand for people watching. It contains an overview of the goal, and states what the UN will do about it to achieve that goal.”</p>
+        <p class="hint" style="margin:14px 0 0">Gio, Oliver, Sahil &amp; Tyler</p>
+        <div class="ideas" style="margin-top:22px">
+          <a href="https://www.youtube.com/watch?v=pBn8ZCQvFoo" target="_blank" rel="noopener">Watch on YouTube <span>youtube.com ↗</span></a>
+          <a href="https://sdgs.un.org/goals/goal14" target="_blank" rel="noopener">Read the UN Goal 14 page <span>sdgs.un.org ↗</span></a>
         </div>
       </div>
     </div>
@@ -771,8 +782,12 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
 <section class="data" id="data">
   <div class="wrap">
     <div class="kicker rv">Challenge <b>3</b> Exploring data</div>
-    <h2 class="display h2 rv">Twelve data sets <em>behind the goal</em></h2>
-    <p class="lead rv">Where scientists and governments track the health of the ocean. Filter by target, then click a card to open the source.</p>
+    <h2 class="display h2 rv">Our ten <em>data sets</em></h2>
+    <p class="lead rv">The ten sources we researched for Goal 14. Click any card to open it.</p>
+    <div class="dgrid" id="ourgrid"></div>
+    <div class="ourtake rv" style="margin-top:40px"><div class="kicker">Our summary</div><p>UNSDG #14 (Life Below Water) is a sustainable development goal focusing on conserving and sustainably managing the world’s oceans, seas and sources of marine life. These sources reveal that marine life is under pressure from overfishing, pollution and climate change.</p></div>
+    <h3 class="display rv" style="font-size:clamp(32px,4vw,56px);margin:90px 0 10px">Live data <em>tools</em></h3>
+    <p class="lead rv">More places where scientists track the ocean in real time. Filter by target.</p>
     <div class="filters" id="filters"></div>
     <div class="dgrid" id="dgrid"></div>
 
@@ -798,7 +813,8 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
   <div class="wrap">
     <div class="kicker rv">Challenge <b>4</b> Infographic</div>
     <h2 class="display h2 rv">The ocean <em>at a glance</em></h2>
-    <div class="ig-actions rv"><button class="btn s" id="printBtn">Print or save as PDF</button></div>
+    <p class="lead rv">The facts in our infographic are mostly about the condition of the ocean. The ocean holds 97% of our planet’s water, which is why protecting it is a huge goal for the UN. It also absorbs about 23% of the CO₂ humans release each year, which makes the water more acidic and harms marine life. We aim to protect 30% of the ocean by 2030, and are only at about 8.4% now.</p>
+    <div class="ig-actions rv" style="margin-top:24px"><button class="btn s" id="printBtn">Print or save as PDF</button></div>
 
     <div class="poster" id="poster">
       <svg class="wv" viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C200 110 400 10 600 60 S1000 110 1200 50 V0 H0Z" fill="#DDF1FC"/></svg>
@@ -817,15 +833,15 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
           <p>For every ten fish stocks scientists check, almost four are caught faster than they can recover.</p>
         </div>
         <div class="s2 ph"><div class="bgimg" data-img="Coral_Reef_Bleaching.jpg" data-w="800"></div><h4>Coral reefs</h4><div class="big" style="color:#FFB7A2">84%</div><p>hit by bleaching heat, 2023–25</p></div>
-        <div class="s2 sb"><h4>Climate shield</h4><div class="big">90%+</div><p>of extra heat from greenhouse gases is absorbed by the ocean, plus about 30% of our CO₂</p></div>
-        <div class="s2 ph"><div class="bgimg" data-img="Blue_plastic_on_a_fan_coral,_turkey_beach,_wakatobi,_2018_(45088490204).jpg" data-w="800"></div><h4>Plastic</h4><div class="big" style="color:#FFB7A2">23Mt</div><p>of plastic waste leaks into water each year (upper estimate)</p></div>
+        <div class="s2 sb"><h4>Climate shield</h4><div class="big">90%+</div><p>of extra heat from greenhouse gases is absorbed by the ocean, plus about 23% of the CO₂ we release each year</p></div>
+        <div class="s2 ph"><div class="bgimg" data-img="Blue_plastic_on_a_fan_coral,_turkey_beach,_wakatobi,_2018_(45088490204).jpg" data-w="800"></div><h4>Pollution</h4><div class="big" style="color:#FFB7A2">17Mt</div><p>of waste clogged the ocean in 2021. It could double or triple by 2040.</p></div>
         <div class="s4">
           <h4>Ocean protected vs. 2030 target</h4>
           <div class="pbar"><i></i><s></s></div>
           <div class="pbar-l"><span>8.4% now</span><span>30% by 2030</span></div>
           <p style="margin-top:12px">Gap still to close: <b style="color:#E2522E">21.6 percentage points</b></p>
         </div>
-        <div class="s2"><h4>People who depend on it</h4><div class="big bl">3bn+</div><p>rely on marine and coastal life for a living</p></div>
+        <div class="s2"><h4>Jobs from the sea</h4><div class="big bl">57M</div><p>jobs come from marine fisheries worldwide</p></div>
         <div class="s6 dk">
           <h4>What you can do</h4>
           <div class="acts">
@@ -836,7 +852,7 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
           </div>
         </div>
       </div>
-      <div class="p-foot"><span>Sources: FAO SOFIA 2020–2026 · ICRI/NOAA 2025 · UNEP · Protected Planet 2024 · UN SDG 14</span><span>Below the Surface · SDG 14</span></div>
+      <div class="p-foot"><span>Sources: UN Goal 14 fast facts · FAO SOFIA 2020–2026 · ICRI/NOAA 2025 · Protected Planet 2024</span><span>Life Below Water · Gio, Oliver, Sahil &amp; Tyler</span></div>
     </div>
   </div>
 </section>
@@ -893,6 +909,7 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
       <div class="rv d3"><b><span data-count="50">0</span></b><span>schools in the ocean program</span></div>
     </div>
     <p class="est">These goals are our own planning estimates for the scenario, not official figures.</p>
+    <div class="ourtake rv" style="margin-top:40px"><div class="kicker">In our words</div><p>With $5 million to support Goal 14, we would invest in Indonesia, the heart of the Coral Triangle. It’s the most biodiverse sea on Earth, home to millions of people who depend on reefs and fish, and it faces every problem Goal 14 is trying to solve. We would spend $1.4m on river plastic interceptors, $1.2m on coral reef restoration, $0.9m on community protected areas, $0.7m on small-scale fisher support, $0.5m on ocean education in schools, and $0.3m on monitoring and research.</p><p class="hint" style="margin-top:10px;color:var(--mute)">Gio, Oliver, Sahil &amp; Tyler</p></div>
   </div>
 </section>
 
@@ -901,7 +918,7 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
   <div class="wrap">
     <div class="kicker rv">Test yourself</div>
     <h2 class="display h2 rv">How much do you <em>know?</em></h2>
-    <p class="lead rv">Six quick questions on everything on this site. Can you get a perfect score?</p>
+    <p class="lead rv">Seven quick questions on everything on this site. Can you get a perfect score?</p>
     <div class="qbox rv" id="qbox"></div>
   </div>
 </section>
@@ -929,7 +946,7 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
 <footer>
   <div class="wrap">
     <div class="fgrid">
-      <div><p class="big">Below the <em>surface.</em></p><p style="color:var(--mute);margin-top:16px;font-size:14px">A student website for UN Sustainable Development Goal 14: Life Below Water.</p></div>
+      <div><p class="big">Life below <em>water.</em></p><p style="color:var(--mute);margin-top:16px;font-size:14px">A Science project on UN Sustainable Development Goal 14 by <b style="color:#fff">Gio, Oliver, Sahil and Tyler</b>. Teacher: Mr Irwin.</p></div>
       <div>
         <h4>Sources</h4>
         <ol>
@@ -944,11 +961,21 @@ footer .end{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);di
           <li><a href="https://www.un.org/bbnj/" target="_blank" rel="noopener">UN, High Seas Treaty (BBNJ Agreement)</a></li>
           <li><a href="https://ourworldindata.org/fish-and-overfishing" target="_blank" rel="noopener">Our World in Data, Fish and overfishing</a></li>
           <li><a href="https://ourworldindata.org/plastic-pollution" target="_blank" rel="noopener">Our World in Data, Plastic pollution</a></li>
+          <li><a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/2023/09/Goal-14_Fast-Facts.pdf" target="_blank" rel="noopener">UN, Goal 14 Fast Facts</a></li>
+          <li><a href="https://unstats.un.org/sdgs/report/2023/goal-14/" target="_blank" rel="noopener">UN Statistics, SDG Report 2023: Goal 14</a></li>
+          <li><a href="https://globalgoals.org/goals/14-life-below-water/" target="_blank" rel="noopener">The Global Goals, Life Below Water</a></li>
+          <li><a href="https://about.uq.edu.au/strategy-values/sustainability/sustainable-development-goals/sdg-14-life-below-water" target="_blank" rel="noopener">University of Queensland, SDG 14</a></li>
+          <li><a href="https://superkind.org/causes/life-below-water" target="_blank" rel="noopener">Superkind, Life Below Water</a></li>
+          <li><a href="https://www.rmit.edu.au/about/our-values/sustainability/sustainable-development-goals/goal-14" target="_blank" rel="noopener">RMIT, Goal 14</a></li>
+          <li><a href="https://togetherband.org/blogs/news/facts-about-life-below-water" target="_blank" rel="noopener">Together Band, Facts about Life Below Water</a></li>
+          <li><a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20240813-1" target="_blank" rel="noopener">Eurostat, Marine protected areas</a></li>
+          <li><a href="https://www.bsgforsdg.org/sdg-goals/sdg14-life-below-water" target="_blank" rel="noopener">BSG for SDG, SDG 14</a></li>
+          <li><a href="https://www.youtube.com/watch?v=pBn8ZCQvFoo" target="_blank" rel="noopener">Video: UN Sustainable Development Goals | Life Below Water (14)</a></li>
         </ol>
         <p class="cred" id="credits"></p>
       </div>
     </div>
-    <div class="end"><span>Below the Surface · School project on UN SDG 14</span><a href="#top">Back to the surface ↑</a></div>
+    <div class="end"><span>Life Below Water · Year Science project by Gio, Oliver, Sahil &amp; Tyler · Teacher: Mr Irwin</span><a href="#top">Back to the surface ↑</a></div>
   </div>
 </footer>
 
@@ -1040,9 +1067,24 @@ const FILT=["All","14.1","14.2","14.3","14.4","14.5","14.6"];
 $("#filters").innerHTML=FILT.map((f,i)=>`<button class="${i?"":"on"}" data-f="${f}">${f==="All"?"All data sets":"Target "+f}</button>`).join("");
 $$("#filters button").forEach(b=>b.addEventListener("click",()=>{
   $$("#filters button").forEach(x=>x.classList.toggle("on",x===b));const f=b.dataset.f;
-  $$(".ds").forEach(c=>{const ts=c.dataset.t.split(" "),ok=f==="All"||ts.includes(f)||ts.includes("All");c.classList.toggle("hide",!ok);if(ok)c.classList.add("in")});
+  $$("#dgrid .ds").forEach(c=>{const ts=c.dataset.t.split(" "),ok=f==="All"||ts.includes(f)||ts.includes("All");c.classList.toggle("hide",!ok);if(ok)c.classList.add("in")});
 }));
 
+
+/* ---------- group's 10 data sets ---------- */
+const OURS=[
+ ["UN: Oceans (Goal 14)","Facts, figures and targets on the UN Sustainable Development site.","un.org","https://www.un.org/sustainabledevelopment/oceans/"],
+ ["UN: Goal 14 Fast Facts (PDF)","A one-page fact sheet of key ocean statistics.","un.org","https://www.un.org/sustainabledevelopment/wp-content/uploads/2023/09/Goal-14_Fast-Facts.pdf"],
+ ["UN Statistics: SDG Report 2023, Goal 14","Official progress data on each Goal 14 indicator.","unstats.un.org","https://unstats.un.org/sdgs/report/2023/goal-14/"],
+ ["The Global Goals: Life Below Water","Plain-language overview of the goal and its targets.","globalgoals.org","https://globalgoals.org/goals/14-life-below-water/"],
+ ["University of Queensland: SDG 14","How UQ’s marine research supports Life Below Water.","uq.edu.au","https://about.uq.edu.au/strategy-values/sustainability/sustainable-development-goals/sdg-14-life-below-water"],
+ ["Superkind: Life Below Water","Why the cause matters and ways people can help.","superkind.org","https://superkind.org/causes/life-below-water"],
+ ["RMIT: Goal 14","RMIT University’s work and research on the goal.","rmit.edu.au","https://www.rmit.edu.au/about/our-values/sustainability/sustainable-development-goals/goal-14"],
+ ["Together Band: Facts about Life Below Water","A list of facts about ocean health and threats.","togetherband.org","https://togetherband.org/blogs/news/facts-about-life-below-water"],
+ ["Eurostat: marine protected areas","European data on ocean protection.","ec.europa.eu","https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20240813-1"],
+ ["BSG for SDG: SDG 14","An explainer on the goal, its targets and progress.","bsgforsdg.org","https://www.bsgforsdg.org/sdg-goals/sdg14-life-below-water"]
+];
+$("#ourgrid").innerHTML=OURS.map(([n,d,dom,u],i)=>`<a class="ds rv d${i%3}" href="${u}" target="_blank" rel="noopener"><div class="top"><span class="k">${String(i+1).padStart(2,"0")}</span><span class="arr">↗</span></div><h3>${n}</h3><p>${d}</p><div class="meta"><span class="o">${dom}</span></div></a>`).join("");
 /* ---------- infographic ---------- */
 $("#fishrow").innerHTML=Array.from({length:10},(_,i)=>`<svg viewBox="0 0 36 22" style="transition-delay:${.4+i*.08}s"><path d="M2 11c6-9 17-10 25-3l7-5v16l-7-5c-8 7-19 6-25-3z" fill="${i<4?"#FF7A59":"#7FC7EF"}"/><circle cx="9" cy="10" r="1.6" fill="#062a44"/></svg>`).join("");
 (function(){
@@ -1100,19 +1142,10 @@ const BUDGET=[
 
 /* ---------- video ---------- */
 const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
-(function(){
-  const player=$("#player"),empty=$("#playerEmpty");
-  const yt=u=>{const m=String(u).match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);return m?m[1]:null};
-  function show(u){if(!u)return;player.querySelectorAll("iframe,video").forEach(n=>n.remove());const id=yt(u);let el;
-    if(id){el=document.createElement("iframe");el.src=`https://www.youtube-nocookie.com/embed/${id}?rel=0`;el.title=$("#vtitle").value||"SDG 14 video";el.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";el.referrerPolicy="strict-origin-when-cross-origin";el.allowFullscreen=true}
-    else{el=document.createElement("video");el.src=u;el.controls=true}
-    player.appendChild(el);empty.style.display="none"}
-  ["vurl","vtitle","vwhy"].forEach(k=>{const el=$("#"+k),v=store.get("sdg14-"+k);if(v)el.value=v;el.addEventListener("input",()=>store.set("sdg14-"+k,el.value))});
-  $("#vload").addEventListener("click",()=>show($("#vurl").value.trim()));
-  $("#vurl").addEventListener("keydown",e=>{if(e.key==="Enter")show(e.target.value.trim())});
-  if(store.get("sdg14-vurl"))show(store.get("sdg14-vurl"));
-  else{const t=document.createElement("video");t.preload="metadata";t.onloadedmetadata=()=>show("video.mp4");t.src="video.mp4"}
-})();
+$("#playerEmpty").addEventListener("click",()=>{const f=document.createElement("iframe");
+  f.src="https://www.youtube-nocookie.com/embed/pBn8ZCQvFoo?autoplay=1&rel=0";f.title="UN Sustainable Development Goals | Life Below Water (14)";
+  f.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";f.referrerPolicy="strict-origin-when-cross-origin";f.allowFullscreen=true;
+  $("#player").appendChild(f);$("#playerEmpty").style.display="none"});
 
 /* ---------- pledge ---------- */
 (function(){
@@ -1231,6 +1264,7 @@ $$(".btn").forEach(b=>b.addEventListener("click",e=>{if(b.id!=="pledgeBtn")burst
     ["Roughly how many of the world’s coral reefs were hit by bleaching-level heat in 2023–25?",["About 20%","About 45%","About 65%","About 84%"],3,"Around <b>84%</b> of reefs, in at least 82 countries. It was the worst bleaching event on record."],
     ["Why does coral turn white when it bleaches?",["It gets covered in salt","It pushes out the algae living inside it","Plastic sticks to it","It grows a new shell"],1,"Heat stress makes coral <b>expel the algae</b> that give it colour and most of its food."],
     ["How much of the ocean is currently protected?",["About 8%","About 30%","About 50%","About 2%"],0,"Only about <b>8.4%</b>. The world has agreed to reach 30% by 2030."],
+    ["About how much of the CO₂ humans release each year does the ocean absorb?",["5%","23%","60%","90%"],1,"About <b>23%</b> of yearly human CO₂ emissions are absorbed by the ocean, which also makes the water more acidic."],
     ["Which Goal 14 target is about ending overfishing?",["14.1","14.3","14.4","14.7"],2,"Target <b>14.4</b> is about regulating harvesting and ending overfishing and illegal fishing."],
     ["Which treaty came into force in January 2026?",["The Paris Agreement","The High Seas Treaty","The Kyoto Protocol","The Plastic Ban Treaty"],1,"The <b>High Seas Treaty</b> lets countries create protected areas in international waters for the first time."]
   ];
